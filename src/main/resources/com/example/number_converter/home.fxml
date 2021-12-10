@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="417.0" style="-fx-background-color: #3ac0d4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.number_converter.HelloController">
+    <children>
+        <Label layoutX="66.0" layoutY="26.0" prefHeight="36.0" prefWidth="293.0" text="NUMBER CONVERSIONS" textFill="#bc1515">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="87.0" text="Enter Your Choice :">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button layoutX="64.0" layoutY="131.0" mnemonicParsing="false" onAction="#goToScene1" prefHeight="25.0" prefWidth="151.0" text="Decimal To Binary " />
+        <Button layoutX="64.0" layoutY="181.0" mnemonicParsing="false" onAction="#goToScene2" prefHeight="25.0" prefWidth="151.0" text="Decimal To Octal" />
+        <Button layoutX="64.0" layoutY="231.0" mnemonicParsing="false" onAction="#goToScene3" prefHeight="25.0" prefWidth="151.0" text="Decimal To Hexadecimal" />
+        <ImageView fitHeight="147.0" fitWidth="191.0" layoutX="231.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../icons/icon1.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
