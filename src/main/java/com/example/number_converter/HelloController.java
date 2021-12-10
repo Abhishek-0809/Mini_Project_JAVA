@@ -58,13 +58,6 @@ public class HelloController {
         ans3.setText(Integer.toHexString(n3));
     }
 
-    public void onHomeButtonClick(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("home.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
 
     public void goToScene1(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("dtobinary.fxml"));
@@ -84,6 +77,14 @@ public class HelloController {
 
     public void goToScene3(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("dtohex.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void onHomeButtonClick(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("home.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
